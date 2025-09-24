@@ -1,0 +1,18 @@
+.users-list__item {
+    // max-width: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 25px;
+    &-img {
+        display: block;
+        width: 100px;
+        height: 100px;
+    }
+    &-text {
+        flex: 1;
+        min-width: 0;
+        overflow-wrap: anywhere;
+        padding-top: 15px;
+    }
+}
