@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import UsersList from "../UsersList/UsersList";
 import "./app.scss";
+import Header from "../Header/Header";
 const App = () => {
     const apiURL = "https://jsonplaceholder.typicode.com/users";
     const [users, setUsers] = useState([]);
@@ -15,7 +16,7 @@ const App = () => {
 
     return (
         <div className="app">
-            <h1 className="title">All Users: </h1> <hr></hr>
+            <Header/>
             <UsersList users={users} />
         </div>
     );

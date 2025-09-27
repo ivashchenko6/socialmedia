@@ -1,0 +1,16 @@
+.header {
+    margin-top: 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    &-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    &-title {
+        margin-left: 20px;
+        color: #71ABC9;
+    }
+}

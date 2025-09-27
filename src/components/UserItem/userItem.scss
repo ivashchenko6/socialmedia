@@ -1,9 +1,17 @@
 .users-list__item {
-    // max-width: 270px;
+    width: 350px;
     display: flex;
     justify-content: space-between;
     align-items: start;
     gap: 25px;
+    margin-bottom: 30px;
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        width: 300px;
+    }
+
+
     &-img {
         display: block;
         width: 100px;
@@ -14,5 +22,24 @@
         min-width: 0;
         overflow-wrap: anywhere;
         padding-top: 15px;
+    }
+
+
+
+
+    .users-list__btns-group {
+        margin-left: 10px;
+        &:hover {
+            box-shadow: 1px 1px 1px 1px black;
+        }
+        .users-list__add-friend {
+            background:none;
+            border: none;
+        }
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
     }
 }
