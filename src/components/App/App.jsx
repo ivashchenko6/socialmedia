@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import MainPage from "../Pages/MainPage/MainPage";
+import StartPage from '../Pages/StartPage/StartPage'
 import "./app.scss";
 import Header from "../Header/Header";
 
@@ -21,7 +22,8 @@ const App = () => {
             <Header/>
 
             <Routes>
-                <Route path="/" element={<MainPage users={users}/>} />
+                <Route path="/" element={<StartPage />}/>
+                <Route path="/main" element={<MainPage users={users}/>} />
 
             </Routes>
 

@@ -1,0 +1,33 @@
+.start-page {
+
+    margin-top: 100px;
+    text-align: center;
+
+
+    &__text {
+        text-align: center;
+        margin: 0 auto;
+        width: 700px;
+        font-weight: 700;
+        font-size: 50px;
+        margin-bottom: 100px;
+    }
+
+
+    &__btn  {
+        color:white;
+        text-decoration: none;
+        background-color: #437FB0;
+        font-weight: bold;
+        padding: 30px 35px;
+        text-align: center;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            transition-duration: 1ms;
+            color:black;
+        }
+    }
+
+
+}
