@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
-import { Route, Routes } from "react-router-dom";
-import MainPage from "../Pages/MainPage/MainPage";
-import StartPage from '../Pages/StartPage/StartPage'
-import "./app.scss";
-import Header from "../Header/Header";
+import { useEffect, useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import MainPage from '../Pages/MainPage/MainPage';
+import StartPage from '../Pages/StartPage/StartPage';
+import './app.scss';
+import Header from '../Header/Header';
 
 const App = () => {
-    const apiURL = "https://jsonplaceholder.typicode.com/users";
+    const apiURL = 'https://jsonplaceholder.typicode.com/users';
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
@@ -18,17 +18,13 @@ const App = () => {
     useEffect(() => console.log(users), [users]);
 
     return (
-        <div className="app">
-            <Header/>
+        <div className='app'>
+            <Header />
 
             <Routes>
-                <Route path="/" element={<StartPage />}/>
-                <Route path="/main" element={<MainPage users={users}/>} />
-
+                <Route path='/' element={<StartPage />} />
+                <Route path='/main' element={<MainPage users={users} />} />
             </Routes>
-
-
-
         </div>
     );
 };

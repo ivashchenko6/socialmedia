@@ -1,19 +1,15 @@
+import FriendsAndBlockedList from '../../FriendsAndBlockedList/FriendsAndBlockedList';
 import UsersList from '../../UsersList/UsersList';
+
 import './mainPage.scss';
 
-
-
-const MainPage = ({users}) => {
-
-
-
+const MainPage = ({ users }) => {
     return (
-        <>
-        <h1>Main Page</h1>
-        <UsersList users={users} />
-        </>
-
-    )
-}
+        <div className='main-page'>
+            <UsersList users={users} />
+            <FriendsAndBlockedList />
+        </div>
+    );
+};
 
 export default MainPage;
